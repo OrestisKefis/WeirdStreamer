@@ -1,0 +1,438 @@
+﻿/*Reset -- START*/
+input, select, body, h1, h2, h3, h4, h5, h6 {
+    border: none;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+}
+/*Reset -- END*/
+
+body {
+    background: url('https://thumbs.dreamstime.com/b/gamepad-video-game-controller-background-gadgets-devices-seamless-pattern-208356869.jpg');
+    
+}
+
+.videogame-data {
+    background-color: #c9cbd0;
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top:16px;
+    border-radius:3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top:12px;
+    padding-bottom: 4px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
+}
+
+.videogame-data .search-and-filter {
+    background-color: #1b1b1b;  
+    margin: 0 auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+}
+
+.videogame-data .search-and-filter .search-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.videogame-data .search-and-filter .search-bar input {
+    background: white;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.videogame-data .search-and-filter .search-bar input:hover{
+    border: 2px solid #860000;
+}
+
+.videogame-data .search-and-filter .search-bar button {
+    background-color: #740808;
+    width: 18%;
+    padding: 8px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.videogame-data .search-and-filter .search-bar button:hover {
+    background-color: #890808;
+}
+
+.videogame-data .search-and-filter .filtering .label {
+    color: yellow;
+    font-size: 20px;
+}
+
+.videogame-data .search-and-filter .filtering {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+
+.videogame-data .search-and-filter .filtering .year-published-col {
+    width: 32%;
+    border-right: 1px solid white;
+}
+
+.videogame-data .search-and-filter .filtering .year-published-col input {
+    background: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 42px;
+    width: 95%;
+    padding: 4px 0px;
+}
+
+.videogame-data .search-and-filter .filtering .year-published-col input:hover {
+    border: 2px solid #860000;
+}
+
+
+.videogame-data .search-and-filter .filtering .genre-col {
+    width: 32%;
+    border-right: 1px solid white;
+}
+
+.videogame-data .search-and-filter .filtering .genre-col select {
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 95%;
+    padding: 8px;
+}
+
+.videogame-data .search-and-filter .filtering .genre-col select:hover {
+    cursor: pointer;
+    border: 2px solid #860000;
+}
+
+.videogame-data .search-and-filter .filtering .rating-col {
+    width: 32%;
+}
+
+.videogame-data .search-and-filter .filtering .rating-col select {
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 95%;
+    padding: 8px;
+}
+
+.videogame-data .search-and-filter .filtering .rating-col select:hover {
+    cursor: pointer;
+    border: 2px solid #860000;
+}
+
+.videogame-data .listing-videogames {
+    border-radius: 3px;
+    border:none;
+    margin-top: 30px;
+    height: auto;
+}
+
+.videogame-data .listing-videogames .videogame-info {
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+}
+
+.videogame-data .listing-videogames .videogame-info .photo {
+    cursor: pointer;
+    width: 230px;
+    height: 100%;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.videogame-data .listing-videogames .videogame-info .photo:hover {
+    filter: brightness(80%);
+}
+
+.videogame-data .listing-videogames .videogame-info .photo .fa-cart-plus {
+    padding: 12px;
+    color: white;
+}
+
+.videogame-data .listing-videogames .videogame-info .photo .fa-cart-plus:hover {
+    font-size: 25px;
+    color: #890808;
+    transition: 0.2s;
+}
+
+.videogame-data .listing-videogames .videogame-info .photo .fa-star {
+    padding: 12px;
+    color: #fed909;
+}
+
+.videogame-data .listing-videogames .videogame-info .photo .fa-star:hover {
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+.videogame-data .listing-videogames .videogame-info .photo .fa-star .rating-number {
+    color: white;
+}
+
+.videogame-data .listing-videogames .videogame-info .about-game {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 99%;
+    width: 25%;
+    border-right: 1px solid darkgray;
+    margin-right: auto;
+}
+
+.videogame-data .listing-videogames .videogame-info .about-game .game-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.videogame-data .listing-videogames .videogame-info .about-game .game-details {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.videogame-data .listing-videogames .videogame-info .about-game .game-details .rating .fa-star {
+    color: #fed909;
+    
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer {
+    background-color: white;
+    height: 99%;
+    width: 25%;
+    border-right: 1px solid darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.videogame-data .listing-videogames .videogame-trailer .trailer-play-btn {
+    width: 250px;
+    height: 180px;
+    background-color: #554f4f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+}
+
+.videogame-data .listing-videogames .videogame-trailer .trailer-play-btn:hover {
+    cursor: pointer;
+}
+
+.videogame-data .listing-videogames .videogame-trailer .trailer-play-btn:hover button {
+    background-color: red;
+}
+
+.videogame-data .listing-videogames .videogame-trailer .trailer-play-btn button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 22px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube a {
+    text-decoration: none;
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube a .youtube-icon {
+    background-color: lightgray;
+    width: 100%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 14px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.38);
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube a .youtube-icon:hover {
+    background-color: #e8e6e6
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube a .youtube-icon div:first-child {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+
+.videogame-data .listing-videogames .videogame-info .videogame-trailer .redirect-to-youtube a .youtube-icon .youtube-title {
+    margin-right: 10px;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    width: 30%;
+    height: 99%;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .action-btns {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .price-info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .price-info .before-discount {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .price-info .before-discount strike span {
+    color: red;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .price-info .after-discount {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .price-info .after-discount span {
+    color: green;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .action-btns .cart-btn {
+    width: 50%;
+    margin-top: 12px;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .action-btns .cart-btn button {
+    background-color: green;
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+}
+
+.videogame-data .listing-videogames .videogame-info .actions .action-btns .cart-btn button:hover {
+    background-color: #009f00;
+}
+
+/*My Custom Modal --- START*/
+#modal-background {
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#trailer-modal {
+    background-color: #c9cbd0;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#trailer-modal .trailer-modal-main {
+    width: 100%;
+    height: 76%;
+}
+
+#trailer-modal .trailer-modal-main .videogame-trailer {
+    width: 95%;
+    height: 110%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#trailer-modal .trailer-modal-main .videogame-trailer iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#trailer-modal .trailer-modal-footer {
+    width: 95%;
+    height: 12%;
+    margin: 0 auto;
+    border-top: 1px solid black;
+    text-align: right;
+}
+
+#trailer-modal .trailer-modal-footer button {
+    margin-top: 12px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+/*My Custom Modal --- END*/

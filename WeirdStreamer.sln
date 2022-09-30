@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeirdStreamer", ".", "{1A907895-28CC-45F0-8717-CB9653459AC9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56506"
+		Debug.AspNetCompiler.PhysicalPath = "..\WeirdStreamer\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56506\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56506"
+		Release.AspNetCompiler.PhysicalPath = "..\WeirdStreamer\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56506\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56506"
+		SlnRelativePath = "..\WeirdStreamer\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A907895-28CC-45F0-8717-CB9653459AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A907895-28CC-45F0-8717-CB9653459AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB9A60AC-12FA-43A0-8D26-B8F6EB551443}
+	EndGlobalSection
+EndGlobal

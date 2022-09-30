@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="/MyCSS/styling.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .nav-bar {
+            /*width:15%;*/
+            width: 2.5%;
+            height: 80%;
+            position: fixed;
+            margin-top: 30px;
+            color: white;
+            background-color: #282828;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .nav-bar:hover{
+            width:15%;
+            transition:1s;
+        }
+
+        .nav-bar .hide-reveal-bar{
+            width:97%;
+            font-size:35px;
+        }
+
+        .nav-bar .hide-reveal-bar:hover{
+            cursor:pointer;
+            background-color:#403f3f;
+        }
+
+        .nav-bar .properties{
+            width: 90%;
+            height: 85%;
+            font-size: 25px;
+            /*background-color: red;*/
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+        }
+
+        .nav-bar .properties .function-props{
+            height:80%;
+            /*background-color:yellow;*/
+            border-bottom:1px solid white;
+        }
+
+        .nav-bar .properties .function-props .home-prop{
+            margin-top:5px;
+            border-radius:5px;
+        }
+
+        .nav-bar .properties .function-props .home-prop:hover{
+            background-color:#686767;
+        }
+
+        .nav-bar .properties .function-props .videogame-prop{
+            margin-top:5px;
+            border-radius:5px;
+        }
+
+        .nav-bar .properties .function-props .videogame-prop:hover{
+            background-color:#686767;
+        }
+
+        .nav-bar .properties .function-props .cart-prop{
+            margin-top:260px;
+            border-radius:5px;
+        }
+
+        .nav-bar .properties .function-props .cart-prop:hover{
+            background-color:#686767;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Navigation Bar -- START-->
+    <div class="nav-bar">
+        <div class="hide-reveal-bar">
+            <span class="fa fa-cube"></span>
+        </div>
+        <div class="properties">
+            <div class="function-props">
+                <div class="home-prop">
+                    <span class="fa fa-home"></span>
+                </div>
+                <div class="videogame-prop">
+                    <span class="fa fa-gamepad"></span>
+                </div>
+                <div class="cart-prop">
+                    <span class="fa fa-shopping-cart"></span>
+                </div>
+            </div>
+            <div class="account">
+                <div class="log-in-prop">
+                    <span class="fa fa-user-circle"></span>
+                </div>
+                <div class="sign-in-prop">
+                    <span class="fa fa-id-badge"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navigation Bar -- STOP-->
+    <!--Trailer Modal -- START-->
+    <div id="modal-background" hidden>
+        <div id="trailer-modal">
+            <div class="trailer-modal-main">
+                <div class="videogame-trailer">
+                    <iframe src="https://www.youtube.com/embed/G203e1HhixY"></iframe>
+                </div>
+            </div>
+            <div class="trailer-modal-footer">
+                <button id="hide-modal" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+    <!--Trailer Modal -- STOP-->
+    <!--Video Game Card Data -- START-->
+    <div class="videogame-data">
+
+        <section class="search-and-filter">
+
+            <div id="Search-Bar" class="search-bar">
+                <input id="Videogame-Datalist-Searchfield" type="text" list="videogame-datalist" placeholder="Doom, Assassins Creed etc" />
+                <datalist id="videogame-datalist">
+                </datalist>
+                <button id="Reset-All">Reset</button>
+            </div>
+
+            <div class="filtering">
+
+                <div id="Release-Year" class="year-published-col">
+                    <div class="label">
+                        Year
+                    </div>
+                    <input id="Year-Datalist-Searchfield" type="number" list="year-datalist" placeholder="2019, 2020 etc" />
+                    <datalist id="year-datalist">
+                    </datalist>
+                </div>
+
+                <div id="Genre" class="genre-col">
+                    <div class="label">
+                        Genre
+                    </div>
+                    <select id="Genre-List" class="genre">
+                        <option value="">All</option>
+                    </select>
+                </div>
+
+                <div id="Rating" class="rating-col">
+                    <div class="label">
+                        Rating
+                    </div>
+                    <select id="Rating-List">
+                        <option value="">All</option>
+                        <option>Poor (0-3)</option>
+                        <option>Average (3-6)</option>
+                        <option>Very Good (6-8)</option>
+                        <option>Excellent (8-10)</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="Listing-Videogames" class="listing-videogames">
+
+            <!--<div class="videogame-info">
+
+                <div class="photo" style="background: url('https://assets.reedpopcdn.com/-1616688899670.jpg/BROK/thumbnail/1200x1200/quality/100/-1616688899670.jpg')">
+                    <span class="fa fa-cart-plus"></span>
+                    <span class="fa fa-star">
+                        <span class="rating-number">8.8</span>
+                    </span>
+                </div>
+
+                <div class="about-game">
+                    <div class="game-title">
+                        <h3>Bloodborne</h3>
+                    </div>
+                    <div class="game-details">
+                        <div class="genre">
+                            <span>
+                                <strong>Genre(s): </strong>
+                                <span>Horror, Action</span>
+                            </span>
+                        </div>
+                        <div class="platforms">
+                            <span>
+                                <strong>Platforms: </strong>
+                                <span>Ps4, Pc</span>
+                            </span>
+                        </div>
+                        <div class="publish-date">
+                            <span>
+                                <strong>Published: </strong>
+                                2016/12/2
+                            </span>
+                        </div>
+                        <div class="rating">
+                            <span>
+                                <strong>User Rating: </strong>
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videogame-trailer">
+                    <div class="trailer-play-btn">
+                        <button>
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+                    <div class="redirect-to-youtube">
+                        <span>Watch On</span>
+                        <a href="https://www.youtube.com/watch?v=G203e1HhixY" target="_blank">
+                            <div class="youtube-icon">
+                                <div>
+                                    <span class="fa fa-play"></span>
+                                </div>
+                                <span class="youtube-title">Youtube</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="price-info">
+                        <div class="before-discount">
+                            <strong>Original Price</strong>
+                            <strike>
+                                <span>$49.99</span>
+                            </strike>
+                        </div>
+                        <div class="after-discount">
+                            <strong>Current Offer</strong>
+                            <span>$24.99</span>
+                        </div>
+                    </div>
+                    <div class="action-btns">
+                        <div class="cart-btn">
+                            <button>Add to Cart <i class="fa fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>-->
+
+
+
+        </section>
+
+    </div>
+    <!--Video Game Card Data -- STOP-->
+
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="MyScripts/modal.js"></script>
+    <script src="MyScripts/videogameDataMain.js"></script>
+
+
+    <script>
+
+    </script>
+
+</body>
+</html>
